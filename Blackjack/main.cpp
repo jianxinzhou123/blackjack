@@ -7,9 +7,21 @@
 //
 
 #include <iostream>
+#include "Cards.hpp"
+#include "Deck.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    //Deck d;
+    
+    int array[5] = { 9, 7, 5, 3, 1 };
+    int *ptr = array;
+    
+    cout << *ptr << endl;
+    cout << *array << endl;
+
+    
+    
+
+    
     return 0;
 }

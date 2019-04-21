@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7830AE7226D0BF0003993D2 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7830AE5226D0BF0003993D2 /* Deck.cpp */; };
 		C7DDC263226BED600063F377 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7DDC262226BED600063F377 /* main.cpp */; };
+		C7DDC26B226BEDFF0063F377 /* Cards.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7DDC269226BEDFF0063F377 /* Cards.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C7830AE5226D0BF0003993D2 /* Deck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		C7830AE6226D0BF0003993D2 /* Deck.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Deck.hpp; sourceTree = "<group>"; };
 		C7DDC25F226BED600063F377 /* Blackjack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Blackjack; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DDC262226BED600063F377 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C7DDC269226BEDFF0063F377 /* Cards.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cards.cpp; sourceTree = "<group>"; };
+		C7DDC26A226BEDFF0063F377 /* Cards.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cards.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				C7DDC262226BED600063F377 /* main.cpp */,
+				C7DDC269226BEDFF0063F377 /* Cards.cpp */,
+				C7DDC26A226BEDFF0063F377 /* Cards.hpp */,
+				C7830AE5226D0BF0003993D2 /* Deck.cpp */,
+				C7830AE6226D0BF0003993D2 /* Deck.hpp */,
 			);
 			path = Blackjack;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7830AE7226D0BF0003993D2 /* Deck.cpp in Sources */,
 				C7DDC263226BED600063F377 /* main.cpp in Sources */,
+				C7DDC26B226BEDFF0063F377 /* Cards.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,16 +251,22 @@
 		C7DDC267226BED600063F377 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NS4VN5JF5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		C7DDC268226BED600063F377 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NS4VN5JF5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
