@@ -14,8 +14,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <iomanip>
-
-
+#include <list>
 
 using namespace std;
 
@@ -24,16 +23,16 @@ const int CARDS_PER_DECK = 52;
 class Deck{
 public:
     Deck();
-    void shuffle();
-    void printDeck() const;
-    Card dealCard();
+    void shuffle(Deck &current);
+    void printDeck(Deck &current) const;
+    void dealCard(Deck &current, Deck &player);
+    void PileOld(Deck &current, Deck &old, Card &oldCard);
     
 private:
-    Card *deck;
-    int CurrentCard;
-    
-    
-    
+    list<Card> deck;
+    int CardCounter = 0;
+    int CurrentCard = 0;
+    int oldCardCounter = 0;
     
 };
 

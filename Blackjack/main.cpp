@@ -11,17 +11,26 @@
 #include "Deck.hpp"
 
 int main(int argc, const char * argv[]) {
-    //Deck d;
+    Deck game_deck;
+    Deck old_deck;
+    Deck player_hand;
     
-    int array[5] = { 9, 7, 5, 3, 1 };
-    int *ptr = array;
+    cout << "Welcome to Sam's BlackJack!\n\nHere's your deck:\n";
+    game_deck.shuffle(game_deck);
+    game_deck.printDeck(game_deck);
     
-    cout << *ptr << endl;
-    cout << *array << endl;
+    cout << endl;
 
-    
-    
-
-    
     return 0;
 }
+
+/*Recap.
+ string testString = "test string!";
+ string * myPtr;
+ 
+ myPtr = &testString;
+ *myPtr = "hi";
+ 
+ cout << testString << endl;
+ 
+ */
